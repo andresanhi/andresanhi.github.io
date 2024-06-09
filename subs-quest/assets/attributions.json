@@ -1,0 +1,40 @@
+{
+    "title": "Attributions",
+    "attributions": [
+        {
+            "name": "Open Source Libraries",
+            "items": [
+                {
+                    "name": "Flutter",
+                    "url": "https://flutter.dev",
+                    "description": "An open-source UI software development toolkit created by Google."
+                },
+                {
+                    "name": "Dart",
+                    "url": "https://dart.dev",
+                    "description": "A client-optimized programming language for apps on multiple platforms."
+                }
+            ]
+        },
+        {
+            "name": "Icons",
+            "items": [
+                {
+                    "name": "Font Awesome",
+                    "url": "https://fontawesome.com",
+                    "description": "A popular icon set and toolkit."
+                }
+            ]
+        },
+        {
+            "name": "Other",
+            "items": [
+                {
+                    "name": "Unsplash",
+                    "url": "https://unsplash.com",
+                    "description": "A website dedicated to sharing stock photography under the Unsplash license."
+                }
+            ]
+        }
+    ]
+}

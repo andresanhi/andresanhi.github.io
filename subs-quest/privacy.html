@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang') || 'en';
+
+            const content = {
+                en: {
+                    title: "Privacy Policy of Subsquest",
+                    intro: "At Subsquest, we value your privacy and are committed to protecting your personal data. This privacy policy explains how we collect, use, and share your information when you use our app to register and manage your subscriptions to recurring services and platforms.",
+                    infoTitle: "Information We Collect",
+                    infoContent: "We may collect the following information when you use Subsquest:",
+                    infoList: [
+                        "Account Information: When you sign up, we collect your name, email address, and any other information you voluntarily provide.",
+                        "Subscription Information: Details of the subscriptions you register, such as the service name, start date, payment frequency, and cost.",
+                        "Usage Data: Information about how you use the app, such as the features you use and the time you spend in the app."
+                    ],
+                    usageTitle: "How We Use Your Information",
+                    usageContent: "We use the information we collect to:",
+                    usageList: [
+                        "Provide and improve our services.",
+                        "Manage and track your subscriptions.",
+                        "Personalize your experience in the app.",
+                        "Communicate with you to send updates and important notifications.",
+                        "Comply with our legal and regulatory obligations."
+                    ],
+                    sharingTitle: "How We Share Your Information",
+                    sharingContent: "We do not share your personal information with third parties, except in the following circumstances:",
+                    sharingList: [
+                        "With service providers who help us operate the app and who are subject to confidentiality obligations.",
+                        "If required by law or to respond to legal processes.",
+                        "To protect our rights, property, and safety, as well as those of our users."
+                    ],
+                    securityTitle: "Information Security",
+                    securityContent: "We take reasonable measures to protect your personal information from loss, theft, unauthorized access, disclosure, alteration, and destruction. However, no data transmission over the Internet or electronic storage system is completely secure, so we cannot guarantee the absolute security of your information.",
+                    rightsTitle: "Your Rights",
+                    rightsContent: "You have the right to access, correct, or delete your personal information at any time. If you wish to exercise these rights, please contact us using the contact information provided in the app.",
+                    changesTitle: "Changes to this Privacy Policy",
+                    changesContent: "We may update this privacy policy from time to time to reflect changes in our practices or for legal, operational, or regulatory reasons. We will notify you of any changes by posting the new privacy policy in the app and updating the 'Last Updated' date at the top of this page.",
+                    contactTitle: "Contact",
+                    contactContent: "If you have any questions or concerns about this privacy policy or our privacy practices, please contact us using the information provided in the app."
+                },
+                es: {
+                    title: "Política de Privacidad de Subsquest",
+                    intro: "En Subsquest, valoramos tu privacidad y nos comprometemos a proteger tus datos personales. Esta política de privacidad explica cómo recopilamos, utilizamos y compartimos tu información cuando utilizas nuestra aplicación para registrar y gestionar tus suscripciones a servicios y plataformas recurrentes.",
+                    infoTitle: "Información que Recopilamos",
+                    infoContent: "Podemos recopilar la siguiente información cuando utilizas Subsquest:",
+                    infoList: [
+                        "Información de la cuenta: Cuando te registras, recopilamos tu nombre, dirección de correo electrónico y cualquier otra información que proporciones voluntariamente.",
+                        "Información de suscripciones: Detalles de las suscripciones que registras, como el nombre del servicio, la fecha de inicio, la frecuencia de pago y el costo.",
+                        "Datos de uso: Información sobre cómo utilizas la aplicación, como las funciones que utilizas y el tiempo que pasas en la aplicación."
+                    ],
+                    usageTitle: "Cómo Utilizamos tu Información",
+                    usageContent: "Utilizamos la información que recopilamos para:",
+                    usageList: [
+                        "Proporcionar y mejorar nuestros servicios.",
+                        "Gestionar y hacer seguimiento de tus suscripciones.",
+                        "Personalizar tu experiencia en la aplicación.",
+                        "Comunicarnos contigo para enviarte actualizaciones y notificaciones importantes.",
+                        "Cumplir con nuestras obligaciones legales y reglamentarias."
+                    ],
+                    sharingTitle: "Cómo Compartimos tu Información",
+                    sharingContent: "No compartimos tu información personal con terceros, excepto en las siguientes circunstancias:",
+                    sharingList: [
+                        "Con proveedores de servicios que nos ayudan a operar la aplicación y que están sujetos a obligaciones de confidencialidad.",
+                        "Si es requerido por ley o para responder a procesos legales.",
+                        "Para proteger nuestros derechos, propiedad y seguridad, así como los de nuestros usuarios."
+                    ],
+                    securityTitle: "Seguridad de la Información",
+                    securityContent: "Tomamos medidas razonables para proteger tu información personal contra pérdida, robo, acceso no autorizado, divulgación, alteración y destrucción. Sin embargo, ninguna transmisión de datos a través de Internet o sistema de almacenamiento electrónico es completamente segura, por lo que no podemos garantizar la seguridad absoluta de tu información.",
+                    rightsTitle: "Tus Derechos",
+                    rightsContent: "Tienes derecho a acceder, corregir o eliminar tu información personal en cualquier momento. Si deseas ejercer estos derechos, por favor contáctanos a través de los datos de contacto proporcionados en la aplicación.",
+                    changesTitle: "Cambios en esta Política de Privacidad",
+                    changesContent: "Podemos actualizar esta política de privacidad de vez en cuando para reflejar cambios en nuestras prácticas o por razones legales, operativas o reglamentarias. Te notificaremos sobre cualquier cambio publicando la nueva política de privacidad en la aplicación y actualizando la fecha de 'Última actualización' en la parte superior de esta página.",
+                    contactTitle: "Contacto",
+                    contactContent: "Si tienes alguna pregunta o inquietud sobre esta política de privacidad o nuestras prácticas de privacidad, por favor contáctanos a través de la información proporcionada en la aplicación."
+                }
+            };
+
+            const pageContent = content[lang];
+
+            document.getElementById("title").innerText = pageContent.title;
+            document.getElementById("intro").innerText = pageContent.intro;
+            document.getElementById("info-title").innerText = pageContent.infoTitle;
+            document.getElementById("info-content").innerText = pageContent.infoContent;
+
+            const infoList = document.getElementById("info-list");
+            pageContent.infoList.forEach(item => {
+                const li = document.createElement("li");
+                li.innerText = item;
+                infoList.appendChild(li);
+            });
+
+            document.getElementById("usage-title").innerText = pageContent.usageTitle;
+            document.getElementById("usage-content").innerText = pageContent.usageContent;
+
+            const usageList = document.getElementById("usage-list");
+            pageContent.usageList.forEach(item => {
+                const li = document.createElement("li");
+                li.innerText = item;
+                usageList.appendChild(li);
+            });
+
+            document.getElementById("sharing-title").innerText = pageContent.sharingTitle;
+            document.getElementById("sharing-content").innerText = pageContent.sharingContent;
+
+            const sharingList = document.getElementById("sharing-list");
+            pageContent.sharingList.forEach(item => {
+                const li = document.createElement("li");
+                li.innerText = item;
+                sharingList.appendChild(li);
+            });
+
+            document.getElementById("security-title").innerText = pageContent.securityTitle;
+            document.getElementById("security-content").innerText = pageContent.securityContent;
+            document.getElementById("rights-title").innerText = pageContent.rightsTitle;
+            document.getElementById("rights-content").innerText = pageContent.rightsContent;
+            document.getElementById("changes-title").innerText = pageContent.changesTitle;
+            document.getElementById("changes-content").innerText = pageContent.changesContent;
+            document.getElementById("contact-title").innerText = pageContent.contactTitle;
+            document.getElementById("contact-content").innerText = pageContent.contactContent;
+        });
+    </script>
+</head>
+<body>
+    <h1 id="title"></h1>
+    <p id="intro"></p>
+
+    <h2 id="info-title"></h2>
+    <p id="info-content"></p>
+    <ul id="info-list"></ul>
+
+    <h2 id="usage-title"></h2>
+    <p id="usage-content"></p>
+    <ul id="usage-list"></ul>
+
+    <h2 id="sharing-title"></h2>
+    <p id="sharing-content"></p>
+    <ul id="sharing-list"></ul>
+
+    <h2 id="security-title"></h2>
+    <p id="security-content"></p>
+
+    <h2 id="rights-title"></h2>
+    <p id="rights-content"></p>
+
+    <h2 id="changes-title"></h2>
+    <p id="changes-content"></p>
+
+    <h2 id="contact-title"></h2>
+    <p id="contact-content"></p>
+</body>
+</html>
