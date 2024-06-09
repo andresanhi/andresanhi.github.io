@@ -1,0 +1,55 @@
+{
+    "title": "Attributions",
+    "attributions": [
+        {
+            "name": "Open Source Libraries",
+            "items": [
+                {
+                    "name": "Flutter",
+                    "url": "https://flutter.dev",
+                    "description": "An open-source UI software development toolkit created by Google."
+                },
+                {
+                    "name": "Dart",
+                    "url": "https://dart.dev",
+                    "description": "A client-optimized programming language for apps on multiple platforms."
+                }
+            ]
+        },
+        {
+            "name": "Icons",
+            "items": [
+                {
+                    "name": "Home Icon",
+                    "url": "https://www.flaticon.com/free-icons/home",
+                    "description": "Home icons created by IcoGhost - Flaticon."
+                },
+                {
+                    "name": "Statistics Icon",
+                    "url": "https://www.flaticon.com/free-icons/statistics",
+                    "description": "Statistics icons created by Freepik - Flaticon."
+                },
+                {
+                    "name": "Stephanie Edwards",
+                    "url": "https://pixabay.com/users/wanderercreative-855399/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=973460",
+                    "description": "Profile image from Pixabay"
+                },
+                {
+                    "name": "Subscriptions list icon",
+                    "url": "https://www.flaticon.com/free-icons/video",
+                    "description": "Video icons created by Anggara - Flaticon"
+                }
+            ]
+        },
+        {
+            "name": "Other",
+            "items": [
+                {
+                    "name": "Storyset",
+                    "url": "https://storyset.com/data",
+                    "description": "Data illustrations by Storyse."
+                }
+            ]
+        }
+    ]
+}

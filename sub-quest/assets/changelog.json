@@ -1,0 +1,48 @@
+{
+    "en": {
+        "title": "Change Log",
+        "entries": [
+            {
+                "version": "1.0.0",
+                "date": "2024-06-09",
+                "changes": [
+                    "Initial release of Subsquest.",
+                    "Added subscription tracking functionality.",
+                    "Implemented notifications for upcoming payments."
+                ]
+            },
+            {
+                "version": "1.1.0",
+                "date": "2024-07-01",
+                "changes": [
+                    "Improved user interface.",
+                    "Added support for more subscription types.",
+                    "Fixed bugs reported by users."
+                ]
+            }
+        ]
+    },
+    "es": {
+        "title": "Registro de Cambios",
+        "entries": [
+            {
+                "version": "1.0.0",
+                "date": "2024-06-09",
+                "changes": [
+                    "Lanzamiento inicial de Subsquest.",
+                    "Añadida funcionalidad de seguimiento de suscripciones.",
+                    "Implementadas notificaciones para pagos próximos."
+                ]
+            },
+            {
+                "version": "1.1.0",
+                "date": "2024-07-01",
+                "changes": [
+                    "Mejorada la interfaz de usuario.",
+                    "Añadido soporte para más tipos de suscripciones.",
+                    "Corregidos errores reportados por los usuarios."
+                ]
+            }
+        ]
+    }
+}

@@ -14,8 +14,10 @@
                 .then(data => {
                     const changelog = data[lang];
 
+                    document.getElementById('changelog-title').innerText = changelog.title;
+
                     const changelogContainer = document.getElementById('changelog');
-                    changelog.forEach(entry => {
+                    changelog.entries.forEach(entry => {
                         const versionTitle = document.createElement('h2');
                         versionTitle.innerText = `Version ${entry.version} - ${entry.date}`;
                         changelogContainer.appendChild(versionTitle);
@@ -33,7 +35,7 @@
     </script>
 </head>
 <body>
-    <h1>Change Log</h1>
+    <h1 id="changelog-title"></h1>
     <div id="changelog"></div>
 </body>
 </html>
